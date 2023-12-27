@@ -1,0 +1,182 @@
+.logo{
+	height: 80px;
+	width: 200px;
+	margin-left: 100px;
+}
+.navbar-nav{
+	margin-left: 350px;
+}
+.nav-item:hover .dropdown-menu{
+	display: inline-block !important;
+}
+@media(max-width:670px){
+	.logo{
+		height: 65px;
+		width: 170px;
+		margin-left: -30px;
+	}
+	.navbar-nav{
+		margin-left: -50px;
+	}
+	.navbar-nav li{
+		border-bottom: 1px solid black;
+		border-top: 1px solid black;
+		padding-left: 20px;
+	}
+
+}
+
+.icon{
+	height: 100%;
+	width: 100%;
+	float: left;
+	list-style-type: none;
+	position: fixed;
+	top: 250px;
+	left: -40px;
+	z-index: 999;
+}
+.icon li{
+	height: 50px;
+	width: 50px;
+	color: white;
+	padding-left: 15px;
+	padding-top: 5px;
+	background-color: #f88c02;
+
+}
+.icon li:hover{
+	transform: scaleX(1.2);
+
+}
+
+.box1{
+	height: 700px;
+	width: 80%;
+	float: left;
+	margin:100px;
+	margin-left: 70px;
+	border: 5px solid #f88c02;
+	margin-top: 150px;
+	background-color: #eaeaea;
+}
+.box1 img{
+	height: 50%;
+	width: 90%;
+	margin-left: -10px;
+	margin-top: 150px;
+/*	box-shadow:10px 10px 10px black;*/
+}
+@media(max-width:670px){
+	.box1{
+		width: 90%;
+		height: 70%;
+		padding-bottom: -100px;
+		margin-left: 30px;
+	}
+	.box1 img{
+		height: 70%;
+		width: 90%;
+		margin-top: 80px;
+	}
+}
+
+.group h1{
+	margin-top: 200px;
+	font-size: 35px;
+
+}
+.group h4{
+	font-size: 25px;
+	margin-top: 70px;
+	font-weight: bolder;
+}
+.group p{
+	text-align: justify;
+	margin-top: 0px;
+	color: #655e5a;
+}
+@media(max-width:670px){
+	.group{
+		margin-left: 50px;
+	}
+	.group h1{
+		margin-top: 20px;
+	}
+}
+
+.slider2{
+	margin-left: 200px;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.slider2 p{
+	color: white;
+}
+.slider2_2{
+	height: 500px;
+	width: 400px;
+	float: left;
+	border: 5px solid #f88c02;
+	margin-top: 150px;
+	margin-left: 200px;
+}
+.slider2_2 img{
+	height: 500px;
+	width: 400px;
+	margin-top: 100px;
+	position: relative;
+	top: -150px;
+	left: -150px;
+}
+@media(max-width:670px){
+	.slider2_2 { 
+		height: 400px;
+		width: 350px;
+		margin-left: 100px;
+		margin-top: -1300px;
+	}
+	.slider2_2 img{ 
+		height: 400px;
+		width: 350px;
+		margin-left: 100px;
+	}
+	.slider2{
+		margin-left: 80px;
+		margin-top: 500px;
+	}
+	.b{
+		margin-left: -300px;
+		margin-top: -180px;
+		padding-bottom: 30px;
+	}
+}
+
+.image_box:hover{
+	height: 100%;
+	width: 100%;
+}
+
+.slider3{
+	background-color: #f88c02;
+}
+
+.slider4 img{
+	box-shadow: 1px 1px 5px black;
+	border-radius: 7px;
+	border: none;
+}
+.slider5 .image{
+	height: 500px;
+	width: 100%;
+	float: left;
+	background-image: url('https://thehindavigroup.com/wp-content/uploads/2021/12/Eka-Valley-7-1024x596.jpg');
+	background-size: 100% 100%;
+}
+.overimage{
+	height: 100%;
+	width: 100%;
+	float: left;
+	background-color: hsla(197, 100%, 50%, 0.5);
+
+}
