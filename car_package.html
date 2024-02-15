@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/ebb3d39fc6.js" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </head>
+<body>
+<div class="container-fluid" id="packages">
+    <header>
+        <div class="container-fluid" style="background-color: black;">
+            <div class="row" style="padding-top: 15px;">
+                <div class="col-4">
+                    <div class="logo"></div>
+                </div>
+                <div class="col-8">
+                    <button class="btn btn-warning menu-button" onclick="click_menu()"><i class="fa-solid fa-bars"></i></button>
+                    
+                    <div id="list">
+                       <a href="index.html" class="dropdown-list">Home</a><br>
+                       <a href="#packages" class="dropdown-list">Cars Packages</a><br>
+                       <a href="car_booking.html" class="dropdown-list">Car Booking</a><br>
+                       
+                       <a href="#service" class="dropdown-list">Services</a><br>
+                       <a href="t_c.html" class="dropdown-list">Terms & Conditions</a><br>
+                    </div>
+                   <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#packages">Car Packages</a></li>
+                    <li><a href="car_booking.html">Car Booking</a></li>
+                    
+                    <li><a href="index.html">Services</a></li>
+                    <li><a href="t_c.html">Terms & Conditions</a></li>
+                   </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid p-5"></div>
+    <div class="container">
+        <h1 class="text-center pb-2" style="border: 2px solid yellow; outline: 1px solid red;">Choose a car with Package</h1>
+        <div class="row text-white mt-2">
+            <div class="col-4">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoujnnRRvf7-89KDDEyguA2Lw7rq4cfYN5fw&usqp=CAU">
+            </div>
+            <div class="col-lg-8 bg-dark">
+                <h3>Swift Dzier</h3>
+                <ul>
+                    <li>This is car is five seater</li>
+                    <li>Travel in all over Maharashtra</li>
+                    <li>Normal : Rs.11/KM</li>
+                    <li>With AC : Rs.13/KM</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row text-white mt-2">
+            <div class="col-4">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVTLNb2YpymP_Db7pPeMw_q1XOwTjiXFANEA&usqp=CAU">
+            </div>
+            <div class="col-lg-8 bg-primary">
+                <h3>Baleno</h3>
+                <ul>
+                    <li>This is car is five seater</li>
+                    <li>Travel in all over Maharashtra</li>
+                    <li>Normal : Rs.11/KM</li>
+                    <li>With AC : Rs.13/KM</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row text-white mt-2">
+            <div class="col-4">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU5DTjJkVkal2-4Ib-rbgwKKTyWvXaaSjJ2w&usqp=CAU">
+            </div>
+            <div class="col-lg-8 bg-danger">
+                <h3>Ertiga</h3>
+                <ul>
+                    <li>This is car is eight seater</li>
+                    <li>Travel in all over India</li>
+                    <li>Normal : Rs.12/KM</li>
+                    <li>With AC : Rs.15/KM</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="col-4">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-umEVvZhcJesT_tbkDUNf_72S85_vZL4Duw&usqp=CAU">
+            </div>
+            <div class="col-lg-8 " style="background-color: darkgray;">
+                <h3>Innova Crysta</h3>
+                <ul>
+                    <li>This is car is ten seater</li>
+                    <li>Travel in all over India</li>
+                    <li>Normal : Rs.16/KM</li>
+                    <li>With AC : Rs.20/KM</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row mt-2 mb-2">
+            <div class="col-4">
+                <img src="data:image/jpeg;base64,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">
+            </div>
+            <div class="col-lg-8 bg-success text-white">
+                <h3>Scorpio N</h3>
+                <ul>
+                    <li>This is car is ten seater</li>
+                    <li>Travel in all over India</li>
+                    <li>Normal : Rs.15/KM</li>
+                    <li>With AC : Rs.19/KM</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container-fluid">
+            <div class="row bg-dark">
+                <div class="col-lg-4 p-3 text-center">
+                    <h4 class="text-white">Contact</h4>
+                    <p class="text-white">PerfectTaxi
+                        Sudkemala, Ahmednagar, Maharashtra,424401.
+                        Phone: 952XXXXXXX
+                        E-mail: PerfectTaxi@gmail.com</p>
+                </div>
+                <div class="col-lg-4 p-3 ">
+                    <h4 class="text-white text-center">Services</h4>
+                    <div class="text-white text-left" style="margin-left: 110px;">
+                        <ul>
+                      <li>Safety</li>
+                        <li>24/7 Available</li>
+                        <li>Experience Drivers</li>
+                       
+                       
+                    </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 p-3 text-center">
+                    <h4 class="text-white">Quick Links</h4>
+                    <p class="text-white">
+                       <a href="index.html">Home</a><br>
+                       <a href="#packages">Car Packages</a><br>
+                       <a href="car_booking.html">Car Booking</a><br>
+                       
+                       <a href="index.html">Services</a><br>
+                       <a href="t_c.html">Terms & Conditions</a>
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+</div> 
+</body>
+</html>

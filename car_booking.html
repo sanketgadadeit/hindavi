@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ebb3d39fc6.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <header>
+        <div class="container-fluid" style="background-color: black;">
+            <div class="row" style="padding-top: 15px;">
+                <div class="col-4">
+                    <div class="logo"></div>
+                </div>
+                <div class="col-8">
+                    <button class="btn btn-warning menu-button" onclick="click_menu()"><i class="fa-solid fa-bars"></i></button>
+                    
+                    <div id="list">
+                       <a href="index.html" class="dropdown-list">Home</a><br>
+                       <a href="car_package.html" class="dropdown-list">Cars Packages</a><br>
+                       <a href="car_booking.html" class="dropdown-list">Car Booking</a><br>
+                       
+                       <a href="index.html" class="dropdown-list">Services</a><br>
+                       <a href="t_c.html" class="dropdown-list">Terms & Conditions</a><br>
+                    </div>
+                   <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="car_package.html">Car Packages</a></li>
+                    <li><a href="car_package.html">Car Booking</a></li>
+                   
+                    <li><a href="index.html">Services</a></li>
+                    <li><a href="t_c.html">Terms & Conditions</a></li>
+                   </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid p-5"></div>
+    <div class="container-fluid">
+        <div class="row">
+          <h1 class=" text-center">Book Your Car</h1>
+        </div>
+        <div class="row ">
+            <div class="col-12 p-2" style="display: flex;justify-content: center;">
+                <form style="border: 1px solid black; width: 450px; padding: 20px;" class="form">
+                    
+                    <input type="text" placeholder="Enter Your Name" id="name" required><br><br>
+                    
+                    <input type="email" placeholder="Enter Your Email" required><br><br>
+                    <input type="number" placeholder="Enter Your Mobile " id="mob" required><br><br>
+                    <textarea placeholder="Enter Your Address" required></textarea><br><br>
+                    
+                    <label>Chose Your Car :</label>
+                    <select style="width: 150px;margin-left:20px;border-radius:5px;border: none;outline:none; border-bottom: 1px solid red;">
+                        <option>Choose</option>
+                        <option>Swift Dzier</option>
+                        <option>Baleno</option>
+                        <option>Ertiga</option>
+                        <option>Inova Crysta</option>
+                        <option>Scorpio</option>
+                    </select><br><br>
+                    <label>Pickup Date :</label>
+                    <input type="date" style="width: 150px;margin-left:20px" required><br><br>
+                    <label>Pickup Time :</label>
+                    <input type="time" style="width: 150px;margin-left:20px" required><br><br>
+                    <button type="reset" class="button">Reset</button>
+                    <button type="button" onclick="on_submit()">Save</button><br>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container-fluid">
+            <div class="row bg-dark">
+                <div class="col-lg-4 p-3 text-center">
+                    <h4 class="text-white">Contact</h4>
+                    <p class="text-white">PerfectTaxi
+                        Sudkemala, Ahmednagar, Maharashtra,424401.
+                        Phone: 952XXXXXXX
+                        E-mail: PerfectTaxi@gmail.com</p>
+                </div>
+                <div class="col-lg-4 p-3 ">
+                    <h4 class="text-white text-center">Services</h4>
+                    <div class="text-white text-left" style="margin-left: 110px;">
+                        <ul>
+                      <li>Safety</li>
+                        <li>24/7 Available</li>
+                        <li>Experience Drivers</li>
+                       
+                       
+                    </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 p-3 text-center">
+                    <h4 class="text-white">Quick Links</h4>
+                    <p class="text-white">
+                       <a href="index.html">Home</a><br>
+                       <a href="car_package.html">Car Packages</a><br>
+                       <a href="car_booking.html">Car Booking</a><br>
+                       
+                       <a href="index.html">Services</a><br>
+                       <a href="t_c.html">Terms & Conditions</a>
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+</div>
+<div class="text-success" id="payment">
+    <h1 class="text-center">Payement</h1>
+    <input type="text" id="name1"><br>
+    <input type="number" id="mob1"><br>
+    <input type="text" id="money" placeholder="Deposit minimum Rs.500"><br>
+    <button onclick="pay()">Pay</button>
+</div>
+<img src="" id="image">
+</body>
+</html>
+

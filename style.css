@@ -1,0 +1,208 @@
+.menu{
+    font-weight: bold;
+    list-style: none;
+    display:flex;
+}
+.menu li{
+    margin-left: 15px;
+    margin-top: 20px;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+   
+}
+.menu li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+
+}
+.menu li a:hover{
+    background-color:rgb(254, 184, 7);
+    color: black;
+
+}
+
+.logo{
+    height: 80px;
+    width: 200px;
+    background:url("taxii.png");
+    background-size: 100% 100%;
+    margin-top: 10px;
+    margin-left: 100px;
+
+}
+
+.menu-button{
+    display: none;
+}
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    margin-top: -20px;
+}
+#list{
+    display: none;
+    height: 50px;
+    width: 410px;
+    background-color: black;
+    color: white;
+    z-index: 9999;
+}
+.dropdown-list{
+    display: none;
+}
+
+@media (max-width: 576px) { 
+   .menu{
+    display: none;
+   }
+   .logo{
+    height: 50px;
+    width: 120px;
+    margin-left: 10px;
+   }
+   .menu-button{
+    display: inline-block;
+    margin-left:200px;
+    margin-top: 10px;
+   }
+   .dropdown-list{
+    display: inline-block;
+    border:1px solid white;
+    float: left;
+    margin-left: -161px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    height: 40px;
+    width: 425px;
+   }
+  
+   
+ }
+
+.session-1 p{
+    font-size: 18px;
+    margin-left: 20px;
+    color:#a3a4a2;
+}
+.session-1 h4{
+    margin-left: 20px;
+    padding-bottom: 10px;
+}
+
+
+@media(max-width:576px){
+    .session-1 h4{
+        margin-left: -120px;
+    }
+    .session-1 img{
+        margin-top: 100px;
+    }
+    .session-1 p{
+        margin-top: 250px;
+        margin-left: -100px;
+    }
+    .session-1 p:nth-child(3){
+        margin-top: 0px;
+    }
+}
+
+.card-title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #ffc107;
+}
+.card-text{
+    font-size: 16px;
+    color: #a3a4a2;
+}
+
+@media(max-width:576px){
+    .card3{
+        margin-top: 1000px;
+        margin-left: -135px;
+    }
+    .card2{
+        margin-top: 500px;
+        margin-left: -140px;
+    }
+    .card1{
+        margin-left: 50px;
+    }
+    .card{
+        border: none;
+    }
+    .session-2 img{
+       display: none;
+    }
+}
+
+
+/* car_booking css */
+.form{
+    border-radius: 10px;
+
+}
+
+.form label{
+    font-weight: bold;
+}
+.form input,textarea{
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 1px solid red;
+}
+.form input,textarea:focus{
+    outline: none;
+}
+.form button{
+    border-radius: 5px;
+    border: none;
+    border: 1px solid red;
+    background-color: transparent;
+    margin-left: 20px;
+    height: 40px;
+    width: 90px;
+}
+.form .button{
+    margin-left: 100px;
+}
+
+#payment{
+    height: 400px;
+    width: 350px;
+    float: left;
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    border-radius: 10px;
+    border: 1px solid rgb(33, 192, 33);
+    display: none;
+}
+#payment input{
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 280px;
+    border-radius: 10px;
+}
+#payment button{
+    margin-top: 30px;
+    margin-left: 120px;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    width: 100px;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(33, 192, 33);
+}
+
+
+
